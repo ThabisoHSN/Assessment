@@ -5,6 +5,6 @@ How to run the project
   
    ---Using VS Code 
    1. Make sure to run the backend on https://localhost:7244
-   2. run the client using dotnet from its root folder
+   2. run the client using dotnet watch from its root folder
   
 Enjoy
