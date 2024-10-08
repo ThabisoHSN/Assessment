@@ -1,0 +1,39 @@
+body,html{
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+}
+
+.roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  thead>tr>td{
+    padding: 8px;    
+  }
+
+  tbody>tr>td{
+    padding: 8px;    
+  }
+
+  .spinner{
+      border: 16px solid #fff;
+          border-top: 16px solid #d8b4fe;
+          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          animation: spin 700ms linear infinite;
+          top: 40%;
+          position: absolute;
+  }
+
+  @keyframes spin{
+      0%{
+          transform: rotate(0deg);
+      }
+
+      100%{
+          transform: rotate(360deg);
+      }
+  }

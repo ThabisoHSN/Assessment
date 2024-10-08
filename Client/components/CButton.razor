@@ -1,0 +1,21 @@
+﻿<button  type="@ButtonType"class="@($"{(ButtonView == ButtonTypeView.Primary ? "bg-gradient-to-tr from-purple-300 to-white" : "bg-purple-300")} w-full  rounded-full p-2 text-sm")">@Label</button>
+
+@code {
+
+    [Parameter]
+    public string Label {get;set;}
+
+    [Parameter]
+    public string ButtonType {get;set;} = "button";
+
+    [Parameter]
+    public ButtonTypeView ButtonView {get;set;} = ButtonTypeView.Primary;
+
+    public enum ButtonTypeView{
+        Primary,
+        Secondary
+    }
+
+   
+
+}

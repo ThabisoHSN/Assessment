@@ -1,0 +1,28 @@
+﻿@layout LoginLayout;
+@page "/signin";
+@using static Client.components.CButton
+
+@if (IsLoading)
+{
+    <Client.components.Spinner />
+}
+
+<div class="w-full flex flex-col md:w-4/12 p-4 mt-[150px] bg-white h-min rounded-xl ">
+    <div class="w-full text-center">
+        <h3 class="p-2">Sign In</h3>
+        <hr />
+        <EditForm EditContext="@editContext" OnValidSubmit="HandleSignIn">
+            <DataAnnotationsValidator />           
+            <div class="w-full flex flex-col gap-4 mt-4">
+                <Client.components.CInputText @bind-Value="signIn.EmailAddress"
+                    Placeholder="Email Address / Student Number"  For="@(() => signIn.EmailAddress)"/>
+                <Client.components.CInputText InputType="password" @bind-Value="signIn.Password"
+                    Placeholder="Password"  For="@(() => signIn.Password)"/>
+                <Client.components.CButton ButtonView="ButtonTypeView.Primary" ButtonType="submit" Label="SignIn" />
+                <NavLink class="text-xs text-gray-400" href="register">
+                    register
+                </NavLink>
+            </div>
+        </EditForm>
+    </div>
+</div>

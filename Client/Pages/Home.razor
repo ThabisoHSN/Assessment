@@ -1,0 +1,71 @@
+﻿@page "/"
+
+@attribute [Authorize]
+<PageTitle>Dashboard</PageTitle>
+
+@if (IsLoading)
+{
+    <Client.components.Spinner />
+}
+@if (!string.IsNullOrEmpty(CourseCode))
+{
+    <Client.components.ConfirmationModal Confirm="Deregister" Decline="Deregister" />
+}
+
+
+<div class="flex flex-col gap-3">
+
+    <p>Welcome to your student portal.</p>
+    <div class="flex flex-row gap-4 ">
+        <div class="w-4/12 bg-white rounded-xl p-4 text-center flex flex-row">
+            <div class="w-8/12 border-r-purple-300 border-r-2">
+                <p class="text-4xl ">@AvailableCourses</p>
+                <p>Available Courses</p>
+            </div>
+            <div class="w-4/12 text-[48px]"><i class="fa fa-book" aria-hidden="true"></i></div>
+        </div>
+        <div class="w-4/12 bg-white rounded-xl p-4 text-center flex flex-row">
+            <div class="w-8/12 border-r-purple-300 border-r-2">
+                <p class="text-4xl ">@EnrolledCourses</p>
+                <p>Registered Courses</p>
+            </div>
+            <div class="w-4/12 text-[48px]"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+        </div>
+        <div class="w-4/12 bg-white rounded-xl p-4 text-center flex flex-row">
+            <div class="w-8/12 border-r-purple-300 border-r-2">
+                <p class="text-4xl ">@CurrentDate</p>
+                <p>@Month</p>
+            </div>
+            <div class="w-4/12 text-[48px]"><i class="fa fa-calendar-check-o" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <h3 class="text-lg">My Courses</h3>
+    <hr />
+    <div class="mt-2 bg-white rounded-xl w-full p-4">
+        <table class="w-full text-sm">
+            <thead class="">
+                <tr class="border-b border-b-gray-200">
+                    <td>Course</td>
+                    <td>Course Code</td>
+                    <td>Registered Date</td>
+                    <td>Classmates</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in Courses)
+                {
+                    <tr class="border-b border-b-black">
+                        <td>@course.CourseName</td>
+                        <td>@course.CourseCode</td>
+                        <td>@course.RegisteredDate</td>
+                        <td>@course.ClassMembers</td>
+                        <td><button class="bg-purple-400 rounded-full p-1 w-[100px] text-xs"
+                                @onclick="(() => OnDelete(course.CourseCode))">Deregister</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>

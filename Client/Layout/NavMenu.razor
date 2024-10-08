@@ -1,0 +1,58 @@
+﻿@using Client.Utilities;
+@inject ISessionStorageService _sessionStorage;
+@inject AuthenticationStateProvider _authState;
+@inject NavigationManager _navigationManager;
+
+<div class="w-2/12 flex flex-col overflow-y-auto">
+    <div class="w-full flex flex-col pt-[5px]">
+        <p class="text-center text-[100px] text-purple-300"><i class="fa fa-user-circle-o" aria-hidden="true"></i></p>
+        <p class="text-center text-lg">@StudentName</p>
+        <p class="text-center text-lg text-xs">Student no : @StudentNumber</p>
+    </div>
+    <div class="flex flex-col mt-3">
+        <NavLink class="text-sm p-3 hover:bg-purple-200 hover:text-white rounded-l-full" href=""
+                 Match="NavLinkMatch.All">
+            <span class="text-xl" aria-hidden="true"><i class="fa fa-home" aria-hidden="true"></i></span> Home
+        </NavLink>
+        <NavLink class="text-sm p-3 hover:bg-purple-200 hover:text-white rounded-l-full" href="courses">
+            <span class="text-xl" aria-hidden="true"><i class="fa fa-university" aria-hidden="true"></i></span> Courses
+        </NavLink>
+        <button class="text-sm p-3 hover:bg-purple-200 hover:text-white rounded-l-full text-left" @onclick="SignOutUser">
+            <span class="text-xl" aria-hidden="true"><i class="fa fa-sign-out" aria-hidden="true"></i></span> Sign Out
+        </button>
+
+    </div>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private string? StudentNumber = "";
+    private string? StudentName = "";
+
+    protected async override Task OnInitializedAsync()
+    {
+        StudentName = await _sessionStorage.GetItemAsync<string>("StudentName");
+        StudentNumber = await _sessionStorage.GetItemAsync<string>("StudentNumber");
+    }
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    private async Task SignOutUser()
+    {
+        if(_authState is CustomAuthProvider customAuthProvider){
+            await customAuthProvider.SignOut();
+            _navigationManager.NavigateTo("/signin", forceLoad: true);
+
+        }
+    }
+
+
+}
+    
+

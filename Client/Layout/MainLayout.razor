@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+@using Blazored.Toast.Configuration
+
+<div class="w-full flex flex-row min-h-screen">
+  <NavMenu/>
+   <div class="w-10/12 bg-gradient-to-tr from-purple-300 to-white overflow-y-auto p-6 rounded-l-[45px] flex flex-col">
+      @Body
+   </div>
+</div>
+
+<Client.components.CToastComponent/>
+<BlazoredToasts Position="ToastPosition.TopRight"
+                Timeout="10"
+                IconType="IconType.FontAwesome"
+                SuccessClass="success-toast-override"
+                SuccessIcon="fa fa-thumbs-up"
+                ErrorIcon="fa fa-bug" />

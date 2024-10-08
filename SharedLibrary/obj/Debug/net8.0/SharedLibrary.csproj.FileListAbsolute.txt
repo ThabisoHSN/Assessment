@@ -1,0 +1,11 @@
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\bin\Debug\net8.0\SharedLibrary.deps.json
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\bin\Debug\net8.0\SharedLibrary.dll
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\bin\Debug\net8.0\SharedLibrary.pdb
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.AssemblyInfoInputs.cache
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.AssemblyInfo.cs
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.csproj.CoreCompileInputs.cache
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.dll
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\refint\SharedLibrary.dll
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.pdb
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\ref\SharedLibrary.dll

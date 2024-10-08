@@ -1,0 +1,37 @@
+﻿@page "/courses"
+<PageTitle>Courses</PageTitle>
+
+@if (IsLoading)
+{
+    <Client.components.Spinner/>
+}
+
+<div class="mb-4">
+    <h3 class="text-lg">Available Courses</h3>
+    <hr />
+</div>
+<div class="flex w-full justify-center">
+    <div class="w-full bg-white rounded-xl p-4">
+        <table class="w-full text-sm">
+            <thead class="">
+                <tr class="border-b border-b-gray-200">
+                    <td>Course</td>
+                    <td>Course Code</td>
+                    <td>Classmates</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var course in CourseList)
+                {
+                    <tr class="border-b border-b-black">
+                        <td>@course.CourseName</td>
+                        <td>@course.CourseCode</td>
+                        <td>@course.ClassMembers</td>
+                        <td><button class="bg-purple-400 rounded-full p-1 w-[100px] text-xs" @onclick="(() => HandleGoToCourse(course.CourseCode))">Register</button></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(App).Assembly">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
+                <NotAuthorized>
+                    @if (!context.User.Identity.IsAuthenticated)
+                    {
+                        <Client.components.RedirectLayout/>
+                    }
+                </NotAuthorized>
+            </AuthorizeRouteView>
+            
+            <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+        </Found>
+        <NotFound>
+            <PageTitle>Not found</PageTitle>
+            <LayoutView Layout="@typeof(LoginLayout)">
+                <div class="mt-[100px]">
+                    <p>Invalid address </p>
+                </div>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
+

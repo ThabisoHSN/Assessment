@@ -1,0 +1,12 @@
+﻿@inherits LayoutComponentBase
+@using Blazored.Toast.Configuration
+
+<div class="w-full flex justify-center bg-slate-100 min-h-screen">
+    @Body
+</div>
+<BlazoredToasts Position="ToastPosition.TopRight"
+                Timeout="10"
+                IconType="IconType.FontAwesome"
+                SuccessClass="success-toast-override"
+                SuccessIcon="fa fa-thumbs-up"
+                ErrorIcon="fa fa-bug" />

@@ -1,0 +1,24 @@
+﻿@using static Client.components.CButton
+
+<button @onclick="HandleAction" type="@ButtonType"class="@($"{(buttonTypeView == ButtonTypeView.Primary ? "bg-gradient-to-tr from-purple-300 to-white" : "bg-purple-300")} w-full  rounded-full p-2 text-sm")">@Label</button>
+
+@code {
+
+    [Parameter]
+    public string Label {get;set;}
+
+    [Parameter]
+    public string ButtonType {get;set;} = "button";
+
+    [Parameter]
+    public EventCallback<bool> OnAction {get;set;}
+
+    [Parameter]
+    public ButtonTypeView? buttonTypeView {get;set;} = ButtonTypeView.Primary;
+
+
+    public async Task HandleAction(){
+        await OnAction.InvokeAsync(true);
+    }
+
+}

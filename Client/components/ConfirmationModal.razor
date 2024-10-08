@@ -1,0 +1,31 @@
+﻿@using static Client.components.CButton
+<div class="fixed inset-0 bg-black bg-opacity-50 flex justify-center w-full">
+    <div class="w-3/12 bg-white rounded-xl p-4 flex flex-col h-min mt-[150px]">
+        <h4>Confirmation</h4>
+        <hr/>
+        <div class="mt-2 text-center items-center flex flex-col justify-center">
+            <p >Are you sure you want to continue</p>
+            <div class="flex gap-4 mt-3">
+               <button @onclick="OnDecline" class="bg-purple-300 w-[100px]  rounded-full p-2 text-sm">No</button>
+               <button @onclick="OnConfirm" class="bg-gradient-to-tr from-purple-300 to-white w-[100px]  rounded-full p-2 text-sm">Yes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+ [Parameter]
+ public EventCallback<bool> Confirm {get;set;}
+
+[Parameter]
+public EventCallback<bool> Decline {get;set;}
+
+private async Task OnDecline(){
+    await Decline.InvokeAsync(false);
+}
+
+private async Task OnConfirm(){
+    await Confirm.InvokeAsync(true);
+}
+}

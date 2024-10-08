@@ -1,0 +1,139 @@
+[
+  {
+    "ContainingType": "Backend.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SharedLibrary.DTO.Account.Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.AccountController",
+    "Method": "SignIn",
+    "RelativePath": "api/Account/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SharedLibrary.DTO.Account.SignIn.Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.CourseController",
+    "Method": "GetAvailableCourses",
+    "RelativePath": "api/Course/available",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.CourseController",
+    "Method": "DeregisterCourse",
+    "RelativePath": "api/Course/deregister",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SharedLibrary.DTO.Course.Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.CourseController",
+    "Method": "GetEnrolledCourses",
+    "RelativePath": "api/Course/enrolled/{studentNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentNumber",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.CourseController",
+    "Method": "GetCourse",
+    "RelativePath": "api/Course/GetCourse/{courseCode}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courseCode",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.CourseController",
+    "Method": "RegisterNewCourse",
+    "RelativePath": "api/Course/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SharedLibrary.DTO.Course.Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.StudentController",
+    "Method": "UpdateStudent",
+    "RelativePath": "api/Student/{GID}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "SharedLibrary.DTO.Student.Request",
+        "IsRequired": true
+      },
+      {
+        "Name": "GID",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.StudentController",
+    "Method": "GetStudents",
+    "RelativePath": "api/Student/students",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

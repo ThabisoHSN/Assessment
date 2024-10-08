@@ -1,0 +1,34 @@
+﻿@layout LoginLayout;
+@page "/register"
+<PageTitle>Registration Form</PageTitle>
+@using static Client.components.CButton
+@if (IsLoading)
+{
+    <Client.components.Spinner />
+}
+<div class="w-full flex flex-col md:w-4/12 p-4 mt-[80px] bg-white h-min rounded-xl ">
+    <div class="w-full text-center">
+        <h3 class="p-2">Register Now</h3>
+        <hr />
+        <EditForm EditContext="@editContext" OnValidSubmit="HandleRegister">
+            <DataAnnotationsValidator />           
+            <div class="w-full flex flex-col gap-4 mt-4">
+                <Client.components.CInputText @bind-Value="signIn.Name" Placeholder="Name" For="@(() => signIn.Name)" />
+                <Client.components.CInputText @bind-Value="signIn.Surname" Placeholder="Surname"
+                    For="@(() => signIn.Surname)" />
+                <Client.components.CInputText @bind-Value="signIn.ContactNumber" Placeholder="Contact"
+                    For="@(() => signIn.ContactNumber)" />
+                <Client.components.CInputText @bind-Value="signIn.EmailAddress" Placeholder="Email Address"
+                    For="@(() => signIn.EmailAddress)" />
+                <Client.components.CInputText InputType="password" @bind-Value="signIn.Password" Placeholder="Password"
+                    For="@(() => signIn.Password)" />
+                <Client.components.CInputText InputType="password" @bind-Value="signIn.ConfirmPassword"
+                    Placeholder="Confirm Password" For="@(() => signIn.ConfirmPassword)" />
+                <Client.components.CButton ButtonView="ButtonTypeView.Primary" ButtonType="submit" Label="Submit" />
+                <NavLink class="text-xs text-gray-400" href="signin">
+                    Cancel
+                </NavLink>
+            </div>
+        </EditForm>
+    </div>
+</div>

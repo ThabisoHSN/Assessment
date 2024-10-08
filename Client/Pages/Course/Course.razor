@@ -1,0 +1,50 @@
+﻿@page "/course/{CourseId}"
+@using static Client.components.CButton
+<PageTitle>Course</PageTitle>
+
+@if (IsLoading)
+{
+    <Client.components.Spinner/>
+}
+
+<div class="flex justify-center">
+    <div class="w-5/12 bg-white p-4 flex flex-col rounded-xl">
+        <div class="w-full">
+            <h2 class="py-3">Welcome to @course.CourseName</h2>
+            <hr/>
+        </div>
+        <div class="w-full flex flex-col gap-4 mt-4 text-xs">
+              <h4 class="text-sm">Course Details</h4>
+              <div class="flex flex-row w-full">
+                    <div class="w-4/12 text-gray-400">
+                        Course Name : 
+                    </div>
+                    <p class="">@course.CourseName</p>
+              </div>  
+               <div class="flex flex-row w-full">
+                    <div class="w-4/12 text-gray-400">
+                        Course Code : 
+                    </div>
+                    <p>@course.CourseCode</p>
+              </div> 
+              <div class="flex flex-row w-full">
+                    <div class="w-4/12 text-gray-400">
+                       Registered Students : 
+                    </div>
+                    <p>@course.ClassMembers</p>
+              </div>
+              <div class="flex flex-row w-full">
+                    <div class="w-4/12 text-gray-400">
+                        Course Description : 
+                    </div>
+                    <p>@course.CourseDescription</p>
+              </div>
+              <div class="w-full flex flex-row gap-4">
+                <div class="w-1/2"><Client.components.CMethodButton buttonTypeView="ButtonTypeView.Secondary" ButtonType="button" Label="Cancel"  OnAction="HandleCancel"/></div>
+                <div class="w-1/2"><Client.components.CMethodButton buttonTypeView="ButtonTypeView.Primary" ButtonType="button" Label="Register"  OnAction="HandleRegistration"/></div>
+                
+              </div>
+              
+        </div>
+    </div>
+</div>

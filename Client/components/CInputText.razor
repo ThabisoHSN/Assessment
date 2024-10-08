@@ -1,0 +1,29 @@
+﻿@using System.Linq.Expressions
+<div class="w-full flex flex-col gap-1">
+    <input type="@InputType" class="w-full p-2 rounded-full border border-gray-300 text-sm" placeholder="@Placeholder"
+        @oninput="OnInput" @bind="Value" />
+        <p class="text-red-600 text-xs text-left pl-5"><ValidationMessage For="For" /></p>
+</div>
+
+@code {
+    [Parameter]
+    public string Value { get; set; }
+
+    [Parameter]
+    public string InputType { get; set; } = "text";
+
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+
+    [Parameter]
+    public string Placeholder { get; set; }
+
+    [Parameter]
+    public Expression<Func<string>> For { get; set; }
+
+    private async Task OnInput(ChangeEventArgs e)
+    {
+        Value = e.Value.ToString();
+        await ValueChanged.InvokeAsync(Value);
+    }
+}
