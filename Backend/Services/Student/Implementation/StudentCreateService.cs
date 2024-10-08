@@ -37,7 +37,7 @@ public class StudentCreateService : IStudentCreateService
             return (year + (1).ToString("D5"));
         }
 
-        var highestNumber = Int32.Parse(highest.Substring(4)); // Extract the numeric part
+        var highestNumber = Int32.Parse(highest.Substring(4));
         highestNumber++;
 
         return year + highestNumber.ToString("D5");

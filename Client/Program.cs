@@ -8,9 +8,6 @@ var env = builder.HostEnvironment;
 builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
-
-//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("https://localhost:7244") });
-
 builder.Services.AddHttpClient("AssessmentApi", option =>
 {
     option.BaseAddress = new Uri("https://localhost:7244");
