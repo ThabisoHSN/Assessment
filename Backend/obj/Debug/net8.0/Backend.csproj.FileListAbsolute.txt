@@ -46,3 +46,4 @@ D:\Koswell Inhouse Products\Assessment\backend\bin\Debug\net8.0\System.IdentityM
 D:\Koswell Inhouse Products\Assessment\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Koswell Inhouse Products\Assessment\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 D:\Koswell Inhouse Products\Assessment\Backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Koswell Inhouse Products\Assessment\Backend\obj\Debug\net8.0\Backend.sourcelink.json

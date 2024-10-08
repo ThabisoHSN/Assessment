@@ -1078,3 +1078,4 @@ D:\Koswell Inhouse Products\Assessment\client\obj\Debug\net8.0\compressed\42y5tg
 D:\Koswell Inhouse Products\Assessment\client\obj\Debug\net8.0\compressed\gz2racvsda.gz
 D:\Koswell Inhouse Products\Assessment\client\obj\Debug\net8.0\compressed\2pfuk0mpfp.gz
 D:\Koswell Inhouse Products\Assessment\client\obj\Debug\net8.0\compressed\u1jivdkxui.gz
+D:\Koswell Inhouse Products\Assessment\client\obj\Debug\net8.0\Client.sourcelink.json

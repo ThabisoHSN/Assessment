@@ -36,6 +36,14 @@ public partial class Home
         CurrentDate = DateTime.Now.ToString("dd");
         Month = DateTime.Now.ToString("MMMM");
 
+        await RefreshDataAsync();
+
+        IsLoading = false;
+        await InvokeAsync(StateHasChanged);
+    }
+
+    private async Task RefreshDataAsync()
+    {
         var available = await _courseManagement.AvailableCourses();
         AvailableCourses = available?.Result?.Count ?? 0;
 
@@ -45,11 +53,10 @@ public partial class Home
         {
             var enrolled = await _courseManagement.EnrolledCourses(studentNumber);
             EnrolledCourses = enrolled?.Result?.Count ?? 0;
-            await RefreshDataAsync(studentNumber);
+            var results = await _courseManagement.EnrolledCourses(studentNumber);
+            Courses = results.Result ?? [];
         }
 
-        IsLoading = false;
-        await InvokeAsync(StateHasChanged);
     }
 
     private async Task OnDelete(string courseCode)
@@ -98,7 +105,7 @@ public partial class Home
             return;
         }
 
-        await RefreshDataAsync(studentNumber);
+        await RefreshDataAsync();
         IsLoading = false;
         CourseCode = string.Empty;
         await InvokeAsync(StateHasChanged);
@@ -106,11 +113,5 @@ public partial class Home
 
     }
 
-    private async Task RefreshDataAsync(string studentNumber)
-    {
-        var enrolled = await _courseManagement.EnrolledCourses(studentNumber);
-        EnrolledCourses = enrolled?.Result?.Count ?? 0;
-        var results = await _courseManagement.EnrolledCourses(studentNumber);
-        Courses = results.Result ?? [];
-    }
+
 }

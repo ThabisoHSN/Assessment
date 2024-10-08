@@ -9,3 +9,4 @@ D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibr
 D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\refint\SharedLibrary.dll
 D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.pdb
 D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\ref\SharedLibrary.dll
+D:\Koswell Inhouse Products\Assessment\SharedLibrary\obj\Debug\net8.0\SharedLibrary.sourcelink.json

@@ -1,5 +1,6 @@
 ﻿@page "/courses"
 <PageTitle>Courses</PageTitle>
+@attribute [Authorize]
 
 @if (IsLoading)
 {
@@ -17,7 +18,7 @@
                 <tr class="border-b border-b-gray-200">
                     <td>Course</td>
                     <td>Course Code</td>
-                    <td>Classmates</td>
+                    <td>Registered Students</td>
                     <td></td>
                 </tr>
             </thead>

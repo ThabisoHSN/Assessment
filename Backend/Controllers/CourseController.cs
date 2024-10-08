@@ -54,7 +54,14 @@ namespace Backend.Controllers
         {
             try
             {
-                var response = await _courseReadService.AvailableCourses();
+                var studentNumber = User.FindFirst("StudentNumber")?.Value;
+                
+                if(string.IsNullOrEmpty(studentNumber))
+                {
+                    return BadRequest(new SharedLibrary.DTO.Course.Response() { Error = "Invalid token"});
+                }
+
+                var response = await _courseReadService.AvailableCourses(studentNumber);
 
                 return Ok(response);
             }

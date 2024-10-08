@@ -47,8 +47,7 @@
                 <tr class="border-b border-b-gray-200">
                     <td>Course</td>
                     <td>Course Code</td>
-                    <td>Registered Date</td>
-                    <td>Classmates</td>
+                    <td>Registered Date</td>                   
                     <td></td>
                 </tr>
             </thead>
@@ -59,7 +58,7 @@
                         <td>@course.CourseName</td>
                         <td>@course.CourseCode</td>
                         <td>@course.RegisteredDate</td>
-                        <td>@course.ClassMembers</td>
+                     
                         <td><button class="bg-purple-400 rounded-full p-1 w-[100px] text-xs"
                                 @onclick="(() => OnDelete(course.CourseCode))">Deregister</button></td>
                     </tr>

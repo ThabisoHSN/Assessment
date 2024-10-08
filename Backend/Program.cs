@@ -74,6 +74,7 @@ using (var scope = app.Services.CreateScope())
 app.UseCors("AllowSpecificOrigin");
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization(); // Include authorization middleware if applicable
 
 // Map the default controller routes

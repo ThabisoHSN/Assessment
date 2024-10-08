@@ -21,23 +21,7 @@ namespace Backend.Controllers
             _studentReadService = studentReadService;
             _studentManagementService = studentManagementService;
         }
-       
-
-        [HttpGet("students")]
-        public async Task<IActionResult> GetStudents()
-        {
-            try
-            {
-                var students = await _studentReadService.GetStudents();
-
-                return Ok(students);
-
-            }
-            catch (Exception error)
-            {
-                return BadRequest(new SharedLibrary.DTO.Student.Response() { Error = error.Message });
-            }
-        }
+               
 
         [HttpPut("{GID}")]
         public async Task<IActionResult> UpdateStudent([FromBody] SharedLibrary.DTO.Student.Request request, Guid GID)

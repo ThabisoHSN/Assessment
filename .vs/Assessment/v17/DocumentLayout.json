@@ -3,8 +3,40 @@
   "WorkspaceRootPath": "D:\\Koswell Inhouse Products\\Assessment\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\services\\course\\implementation\\coursereadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\services\\course\\implementation\\coursereadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\services\\account\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\services\\account\\implementation\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\services\\course\\icoursereadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\services\\course\\icoursereadservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|d:\\koswell inhouse products\\assessment\\backend\\services\\student\\implementation\\studentcreateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64B9E277-1112-4242-BF6D-F623FC9A929E}|Backend\\Backend.csproj|solutionrelative:backend\\services\\student\\implementation\\studentcreateservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77658113-2F7E-4E3C-8223-B9B902034E87}|SharedLibrary\\SharedLibrary.csproj|d:\\koswell inhouse products\\assessment\\sharedlibrary\\dto\\course\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77658113-2F7E-4E3C-8223-B9B902034E87}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\dto\\course\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77658113-2F7E-4E3C-8223-B9B902034E87}|SharedLibrary\\SharedLibrary.csproj|d:\\koswell inhouse products\\assessment\\sharedlibrary\\dto\\student\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77658113-2F7E-4E3C-8223-B9B902034E87}|SharedLibrary\\SharedLibrary.csproj|solutionrelative:sharedlibrary\\dto\\student\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{50AFAD19-120D-4846-AB8B-A10AF5B02765}|Client\\Client.csproj|d:\\koswell inhouse products\\assessment\\client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,19 +67,123 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\CourseController.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwD8AAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T18:38:16.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentCreateService.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Student\\Implementation\\StudentCreateService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\Student\\Implementation\\StudentCreateService.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Student\\Implementation\\StudentCreateService.cs",
+              "RelativeToolTip": "Backend\\Services\\Student\\Implementation\\StudentCreateService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T18:18:53.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CourseReadService.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Course\\Implementation\\CourseReadService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\Course\\Implementation\\CourseReadService.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Course\\Implementation\\CourseReadService.cs",
+              "RelativeToolTip": "Backend\\Services\\Course\\Implementation\\CourseReadService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAgwGgAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T17:35:15.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwBcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T17:32:45.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Account\\Implementation\\AccountService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\Account\\Implementation\\AccountService.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Account\\Implementation\\AccountService.cs",
+              "RelativeToolTip": "Backend\\Services\\Account\\Implementation\\AccountService.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwBoAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T17:31:37.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Response.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\SharedLibrary\\DTO\\Student\\Response.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\DTO\\Student\\Response.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\SharedLibrary\\DTO\\Student\\Response.cs",
+              "RelativeToolTip": "SharedLibrary\\DTO\\Student\\Response.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T17:30:59.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Response.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\SharedLibrary\\DTO\\Course\\Response.cs",
+              "RelativeDocumentMoniker": "SharedLibrary\\DTO\\Course\\Response.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\SharedLibrary\\DTO\\Course\\Response.cs",
+              "RelativeToolTip": "SharedLibrary\\DTO\\Course\\Response.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAADgvwoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T17:29:44.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICourseReadService.cs",
+              "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Course\\ICourseReadService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\Course\\ICourseReadService.cs",
+              "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Services\\Course\\ICourseReadService.cs",
+              "RelativeToolTip": "Backend\\Services\\Course\\ICourseReadService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T17:30:08.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
               "ToolTip": "D:\\Koswell Inhouse Products\\Assessment\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-07T20:23:27.189Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "index.html",
               "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Client\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "Client\\wwwroot\\index.html",
@@ -55,12 +191,11 @@
               "RelativeToolTip": "Client\\wwwroot\\index.html",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-10-07T20:12:54.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T20:12:54.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "SignIn.razor.cs",
               "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Client\\Pages\\Account\\SignIn.razor.cs",
               "RelativeDocumentMoniker": "Client\\Pages\\Account\\SignIn.razor.cs",
@@ -72,7 +207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "Register.razor.cs",
               "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Client\\Pages\\Account\\Register.razor.cs",
               "RelativeDocumentMoniker": "Client\\Pages\\Account\\Register.razor.cs",
@@ -84,7 +219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
               "Title": "Register.razor",
               "DocumentMoniker": "D:\\Koswell Inhouse Products\\Assessment\\Client\\Pages\\Account\\Register.razor",
               "RelativeDocumentMoniker": "Client\\Pages\\Account\\Register.razor",

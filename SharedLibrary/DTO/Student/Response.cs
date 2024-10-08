@@ -10,7 +10,5 @@ public class Response
     public string? StudentNumber { get; set; }
     public string? ContactNumber { get; set; }
     public string? Password { get; set; }
-    public string? Salt { get; set; }
-    public bool FirstTimeLogin { get; set; }
     public string? Error { get; set; }
 }

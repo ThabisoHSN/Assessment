@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using SharedLibrary.DTO;
 using SharedLibrary.DTO.Course;
 
+
 namespace Backend.Services.Course.Implementation;
 
 public class CourseReadService : ICourseReadService
@@ -15,19 +16,28 @@ public class CourseReadService : ICourseReadService
         _context = context;
     }
 
-    public async Task<DynamicListResponse<Response>> AvailableCourses()
+    public async Task<DynamicListResponse<Response>> AvailableCourses(string studentNumber)
     {
         try
         {
-            var courses = await _context.Courses.AsNoTracking().ToListAsync();
 
-            var results = courses.Select(s => new SharedLibrary.DTO.Course.Response
-            {
-                CourseDescription = s.Description,
-                CourseName = s.CourseName,
-                CourseCode = s.CourseCode,
-                ClassMembers = _context.StudentCourses.Count(c => c.CourseGID == s.GID)
-            }).ToList();
+            var studentGId = await _context.Students.AsNoTracking()
+                                            .Where(w => w.StudentNumber == studentNumber).Select(s => s.GID).FirstOrDefaultAsync();
+
+            var courseGIds = await _context.StudentCourses.AsNoTracking().Where(c => c.StudentGID == studentGId)
+                .Select(c => c.CourseGID)
+                .ToListAsync();
+
+            var results = await _context.Courses.Where(c => !courseGIds.Contains(c.GID))
+                .Select(s => new SharedLibrary.DTO.Course.Response
+                {
+                    CourseDescription = s.Description,
+                    CourseName = s.CourseName,
+                    CourseCode = s.CourseCode,
+                    ClassMembers = _context.StudentCourses.Count(c => c.CourseGID == s.GID)
+
+                }).OrderBy(o => o.CourseName).ToListAsync();
+            
 
 
             return new DynamicListResponse<Response>() { Result = results };
@@ -57,10 +67,10 @@ public class CourseReadService : ICourseReadService
                                 {
                                     CourseCode = g.Key.CourseCode,
                                     CourseName = g.Key.CourseName,
-                                    CourseDescription = g.Key.Description,
-                                    ClassMembers = g.Count(),
+                                    CourseDescription = g.Key.Description,                                    
                                     RegisteredDate = g.Key.RegisteredDate
                                 })
+                                .OrderBy(o => o.CourseName)
                                 .ToListAsync();
 
             return new DynamicListResponse<Response>() { Result = results };
@@ -82,12 +92,25 @@ public class CourseReadService : ICourseReadService
                 return new Response() { Error = "Course not found" };
             }
 
+            var students = await _context.StudentCourses.AsNoTracking()
+                .Include(i => i.Student)
+                .Where(w => w.CourseGID == course.GID)
+                .GroupBy(g => new {g.Student.Name , g.Student.Surname, g.Student.StudentNumber})
+                .Select(s => new SharedLibrary.DTO.Student.Response
+                {
+                    Name = s.Key.Name,
+                    Surname = s.Key.Surname,
+                    StudentNumber = s.Key.StudentNumber
+
+                }).OrderBy(o => o.Name).ToArrayAsync();
+
             var results = new Response()
             {
                 CourseName = course.CourseName,
                 CourseDescription = course.Description,
                 CourseCode = course.CourseCode,
-                ClassMembers = await _context.StudentCourses.CountAsync(c => c.CourseGID == course.GID)
+                ClassMembers = await _context.StudentCourses.CountAsync(c => c.CourseGID == course.GID),
+                Students = students
             };
 
             return results;
