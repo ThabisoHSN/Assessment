@@ -13,83 +13,83 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Client
 build_property.RootNamespace = Client
-build_property.ProjectDir = D:\Koswell Inhouse Products\Assessment\client\
+build_property.ProjectDir = D:\Koswell Inhouse Products\Assessment\Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Koswell Inhouse Products\Assessment\client
+build_property.MSBuildProjectDirectory = D:\Koswell Inhouse Products\Assessment\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Koswell Inhouse Products/Assessment/client/App.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/components/CButton.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/components/CButton.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xDQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/components/CInputText.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/components/CInputText.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xDSW5wdXRUZXh0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/components/CMethodButton.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/components/CMethodButton.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xDTWV0aG9kQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/components/ConfirmationModal.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/components/ConfirmationModal.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xDb25maXJtYXRpb25Nb2RhbC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/components/RedirectLayout.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/components/RedirectLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xSZWRpcmVjdExheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/components/Spinner.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/components/Spinner.razor]
 build_metadata.AdditionalFiles.TargetPath = Y29tcG9uZW50c1xTcGlubmVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Layout/LoginLayout.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Layout/LoginLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XExvZ2luTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Account/Register.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Account/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Account/SignIn.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Account/SignIn.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxTaWduSW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Counter.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Course/Course.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Course/Course.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlXENvdXJzZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Course/Courses.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Course/Courses.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cnNlXENvdXJzZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Home.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Pages/Weather.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/_Imports.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Koswell Inhouse Products/Assessment/client/Layout/MainLayout.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tmopy668it
 
-[D:/Koswell Inhouse Products/Assessment/client/Layout/NavMenu.razor]
+[D:/Koswell Inhouse Products/Assessment/Client/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-9qkkwgv1yd
